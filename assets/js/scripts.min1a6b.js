@@ -8087,7 +8087,7 @@ var __extends =
         function i(t) {
             var n = a.call(this, t) || this;
             (n.text = ""),
-                (n.currentCategoryText = "Micaela Linares"),
+                (n.currentCategoryText = "Mica Linares"),
                 (n.currentCategoryNumChildren = ""),
                 (n.showingBranding = !0),
                 (n.canShowLogoType = !1),
@@ -8123,7 +8123,7 @@ var __extends =
             (i.prototype.animateInForIntro = function () {
                 var t = this;
                 (this.showingBranding = !0),
-                    this.updateData("Micaela Linares", !0, "Make Up Artist & Hairstylist", function () {
+                    this.updateData("Mica Linares", !0, "Make Up Artist & Hairstylist", function () {
                         (t.hasSetupForIntro = !0), t.introWantsToAnimateInRequestd && t.slideIntrotToPlace();
                     }),
                     setTimeout(function () {
@@ -8170,13 +8170,13 @@ var __extends =
             (i.prototype.onPageChange = function () {
                 this.showingBranding = !1;
                 var t = window.app.router.pageType;
-                (this.canShowLogoType = !Application.introDone || t === PageTypes.HOME || t === PageTypes.CONTACT), this.canShowLogoType && this.updateData("Micaela Linares", !0, "Make Up Artist & Hairstylist");
+                (this.canShowLogoType = !Application.introDone || t === PageTypes.HOME || t === PageTypes.CONTACT), this.canShowLogoType && this.updateData("Mica Linares", !0, "Make Up Artist & Hairstylist");
             }),
             (i.prototype.onCustomScrolling = function (t) {
                 var e = t.detail;
                 this.canShowLogoType &&
                     (e.position >= Math.round(ScrollController.maxMin) - 20
-                        ? this.showingBranding || this.updateData("Micaela Linares", !0, "Make Up Artist & Hairstylist")
+                        ? this.showingBranding || this.updateData("Mica Linares", !0, "Make Up Artist & Hairstylist")
                         : e.position < Math.round(ScrollController.maxMin) && this.showingBranding && this.updateData(this.currentCategoryText, !1));
             }),
             (i.prototype.updateData = function (t, e, n, a) {

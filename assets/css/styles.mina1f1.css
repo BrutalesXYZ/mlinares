@@ -1,3 +1,7 @@
+body{
+    cursor: crosshair; 
+}
+
 #nprogress {
     pointer-events: none;
 }
@@ -233,9 +237,8 @@ a:visited {
 }
 
 @font-face {
-    font-family: 'The Nautigal', cursive;
+    font-family: 'England';
     font-weight: 400;
-    font-style: normal;
 }
 ::selection {
     background: transparent;
