@@ -8123,7 +8123,7 @@ var __extends =
             (i.prototype.animateInForIntro = function () {
                 var t = this;
                 (this.showingBranding = !0),
-                    this.updateData("Mica Linares", !0, "Make Up Artist & Hairstylist", function () {
+                    this.updateData("Micaela Linares", !0, "Make Up Artist & Hairstylist", function () {
                         (t.hasSetupForIntro = !0), t.introWantsToAnimateInRequestd && t.slideIntrotToPlace();
                     }),
                     setTimeout(function () {
