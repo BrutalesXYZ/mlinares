@@ -2,41 +2,64 @@ body{
     cursor: crosshair; 
 }
 
+#es_, #en_ {
+    cursor: pointer;
+}
+
+span .hidden{
+    display: none;
+}
+
 .image{
-    position: absolute;
-    top: 30vh;
-    right: 15vw;
+    position: relative;
+    width: 50vw;
+    margin: 10vh 5vw;
 }
 
 .image span{
     display: block;
     position: relative;
+    margin: 5vh;
+    left: 30vw;
     bottom: 5vh;
-    height: 70vh;
     width: 50vw;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: serif;
     user-select: none;
     text-decoration: none;
     color: #333;
     text-align: right;
-    overflow-x: hidden;
+    
     font-family: 'Roboto Slab', serif;
 }
 
-.noselect {
-   cursor: default;
-   -webkit-user-select: none;
-   -webkit-touch-callout: none;
-   -khtml-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
-   -o-user-select: none;
+.brand{
+    margin-right: 3vw;
 }
 
-.noselect:focus {
-   outline: none;
+.brands{
+    position: relative;
+    margin-right: 6vh;
 }
+
+.input{
+    font-size: 1.5em;
+    border-bottom: 1px solid black;
+    border: #000;
+}
+
+.submit{
+    font-size: 1.5em;
+    border-radius: 50px;
+    border: 1px solid black;
+    padding: 5px 20px;
+}
+
+.submit:hover{
+    color: white;
+    background: #000;
+}
+
 
 a,
 abbr,
@@ -242,14 +265,14 @@ a:visited {
     tap-highlight-color: rgba(255, 255, 255, 0);
 }
 @font-face {
-    font-family: "Roboto Mono", monospace;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: bolder;
 }
 @font-face {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: bolder;
 }
 ::selection {
     background: transparent;
@@ -268,7 +291,7 @@ html {
     position: relative;
     width: 100%;
     max-height: var(--app-height, 100vh);
-    overflow: hidden;
+    
     padding: 0;
     margin: 0;
     font-family: "Roboto", sans-serif;
@@ -288,9 +311,7 @@ html {
 @media only screen and (max-width: 789px) {
     html.touch,
     html.touch body {
-        overflow: hidden;
-        -webkit-overflow-scrolling: auto;
-        position: fixed;
+        
     }
 }
 body.page--loading {
@@ -307,7 +328,7 @@ h3 {
     line-height: 1;
 }
 strong {
-    font-family: "Roboto Mono", monospace;
+    font-family: "Roboto", sans-serif;
 }
 a,
 button {
@@ -752,7 +773,7 @@ header#header a {
     text-decoration: none;
 }
 header#header nav[role="navigation"] {
-    font-family: "Roboto Mono", monospace;
+    font-family: "Roboto", sans-serif;
     display: inline-block;
     position: absolute;
     left: 3.4vw;
@@ -1089,37 +1110,12 @@ html.touch .slide-elements-list .slide-element a:focus {
     transform-origin: 0 50%;
     will-change: transform;
 }
-.slide-elements-list .slide-element .image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 3;
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -o-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
+
 .slide-elements-list .slide-element .image canvas.face-detection {
     display: none;
 }
 @media only screen and (min-width: 789px) {
-    .slide-elements-list .slide-element .image canvas.face-detection {
-        position: absolute;
-        display: block;
-        visibility: hidden;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        z-index: 3;
-    }
+
 }
 @media only screen and (min-width: 789px) {
     .slide-elements-list .slide-element .image:hover canvas.face-detection {
@@ -1608,7 +1604,7 @@ body:not(.scroll-to-explore--show) .slide-elements-list .slide-element .case-ele
     line-height: 1.3;
 }
 .slide-elements-list .slide-element .case-elements .keywords ul h4 {
-    font-family: "Roboto Mono", monospace;
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
     margin-bottom: 15px;
     opacity: 0;
@@ -1848,7 +1844,7 @@ body.intro-done .slider-ui {
     z-index: 89;
     left: 0;
     bottom: 25px;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Roboto", sans-serif;
     font-size: 30px;
     pointer-events: none;
     white-space: nowrap;
@@ -2036,7 +2032,7 @@ span.item.false{
 #slider-info > h3 > div .subtitle {
     display: table;
     font-size: 14px;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Roboto", sans-serif;
     margin-top: 18px;
 }
 @media only screen and (min-width: 641px) {
@@ -2512,7 +2508,7 @@ main[role="main"][page-type="explore"] menu {
     }
 }
 main[role="main"][page-type="explore"] menu button {
-    font-family: "Roboto Mono", monospace;
+    font-family: "Roboto", sans-serif;
     font-size: 1.428571428571429rem;
     position: absolute;
 }
@@ -2645,7 +2641,7 @@ main[role="main"][page-type="explore"] .lists ul {
     width: auto;
     height: 100%;
     top: 0;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Roboto", sans-serif;
     padding-left: 9vw;
     left: 100vw;
     padding-right: 6vw;
