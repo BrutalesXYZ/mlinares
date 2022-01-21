@@ -1,8 +1,6 @@
 <!doctype html>
   <html lang="en">
   
-  <!-- Mirrored from lassepedersen.biz/commercial by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 09 Jan 2022 01:05:19 GMT -->
-  <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
   <head>
 
 
@@ -40,7 +38,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
 
-    <title>Micaela Linares | Weddings</title>
+    <title>Bio | Micaela Linares | Weddings</title>
 
     <link rel="manifest" href="assets/pwa/manifest.json">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
@@ -49,6 +47,7 @@
       var rootFolder = ""
     </script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="assets/css/styles.minbbbb.css?v=1.2.3">
 
@@ -63,7 +62,7 @@
             <a href="bio.html">Bio</a>
           </li>
           <li class=" active">
-            <a href="index.html">Fashion</a>
+            <a href="index.html">Editorial</a>
           </li>
           <li class="">
             <a href="weddings.html">Weddings</a>
@@ -84,25 +83,77 @@
 
 
         <div class="image">
-          <span disabled="disabled">Micaela Linares es maquilladora profesional con más de 6 años de experiencia. Se formó en la escuela <a href="https://pe.kryolan.com/" target="_blank">Kryolan</a>, Perú y luego se especializó en Argentina y Colombia.<br><br>
 
-          Su carrera se ha desarrollado en diversos escenarios, tales como: sociales, bodas, editoriales, retail y publicidad. Ha colaborado con marcas internacionales como Nike, Adidas, H&M, Claro. Así mismo, con Koketa, Exit, Fina, Mentha y Chocolate, marcas peruanas.<br><br>
+         <span id="en"><h1>Micaela Linares</h1> is a professional makeup artist with more than 6 years of experience. She trained at the <a href="https://pe.kryolan.com/" target="_blank"> Kryolan </a> school, Peru and then specialized in Argentina and Colombia.<br> <br>
 
+          Her career has been developed in various scenarios, such as: social, weddings, editorials, retail and advertising. She has collaborated with international brands such as Nike, Adidas, Caterpillar, H&M, Claro. Likewise, with Koketa, Exit, Fina, Mentha and Chocolate, peruvian brands.<br><br>
+
+          Micaela has worked with leading photographers Yukimi Moromisato, Alessandro Gogny, Armando Rodríguez, Lalo Rondón.
+
+          For her, it is extremely important to convey the essence of the brand or model in each session, trying to turn makeup into its own expressive and diverse form.
+        </span><span id="es" style="display:none"><h1>Micaela Linares</h1> es maquilladora profesional con más de 6 años de experiencia. Se formó en la escuela <a href="https://pe.kryolan.com/" target="_blank">Kryolan</a>, Perú y luego se especializó en Argentina y Colombia.<br><br>
+
+          Su carrera se ha desarrollado en diversos escenarios, tales como: sociales, bodas, editoriales, retail y publicidad. Ha colaborado con marcas internacionales como Nike, Adidas, Caterpillar, H&M, Claro. Así mismo, con Koketa, Exit, Fina, Mentha y Chocolate, marcas peruanas.<br><br>
+
+          Micaela ha trabajado con fotógrafas destacables como Yukimi Moromisato, Alessandro Gogny, Armando Rodríguez y Lalo Rondón.
           Para ella es sumamente importante transmitir la escencia de la marca o persona en cada sesión tratando de convertir el maquillaje en una forma expresiva propia y diversa.
+        </span>
+          
+        <span id="es_" style="text-decoration:underline;">ESPAÑOL</span>
+        <span id="en_" style="display: none;text-decoration:underline;">ENGLISH</span>
+        
+        <div class="image brands">
+          <span>
+            <img class="brand" src="assets/images/nike.png">
+            <img class="brand" src="assets/images/adidas.png">
+            <img class="brand" src="assets/images/cat.png">
+            <img class="brand" src="assets/images/h&m.png">
+            <img class="brand" src="assets/images/claro.png">
           </span>
-
         </div>
+        
+        <div><form
+          action="https://formspree.io/f/mnqwjorr"
+          method="POST"
+          >
+          <label>
+            <input type="email" class="input" name="_replyto" placeholder="correo@electrónico.com">
+          </label>
+          <label>
+            <input type="number" class="input" name="message" placeholder="+51 999 999 999">
+          </label>
+          <button type="submit" class="submit">Enviar</button>
+        </form></div>
+
+      </div>
 
 
-      </main>
+    </main>
 
 
-    </div>
-    <script src="assets/js/scripts.min1a6b.js?v=1.3.4"></script>
+  </div>
+  <script src="assets/js/scripts.min1a6b.js?v=1.3.4"></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132451749-1"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
 
-  </body>
+      $("#es_").click(function(){
+        $("#es_").hide();
+        $("#en_").show();
+        $("#en").hide();
+        $("#es").show();
+      });
 
-  </html>
+      $("#en_").click(function(){
+        $("#es_").show();
+        $("#en_").hide();
+        $("#en").show();
+        $("#es").hide();
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>
