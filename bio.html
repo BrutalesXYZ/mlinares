@@ -71,7 +71,7 @@
             <a href="media.html">Media</a>
           </li>    
           <li class="">
-            <a href="contact.html">Contacto</a>
+            <a href="contact.html">Contact</a>
           </li>
         </ul>
       </nav>
@@ -98,7 +98,7 @@
           Micaela ha trabajado con fotógrafas destacables como Yukimi Moromisato, Alessandro Gogny, Armando Rodríguez y Lalo Rondón.
           Para ella es sumamente importante transmitir la escencia de la marca o persona en cada sesión tratando de convertir el maquillaje en una forma expresiva propia y diversa.
         </span>
-          
+
         <span id="es_" style="text-decoration:underline;">ESPAÑOL</span>
         <span id="en_" style="display: none;text-decoration:underline;">ENGLISH</span>
         
@@ -112,19 +112,16 @@
           </span>
         </div>
         
-        <div><form
-          action="https://formspree.io/f/mnqwjorr"
-          method="POST"
-          >
-          <label>
-            <input type="email" class="input" name="_replyto" placeholder="correo@electrónico.com">
-          </label>
-          <label>
-            <input type="number" class="input" name="message" placeholder="+51 999 999 999">
-          </label>
-          <button type="submit" class="submit">Enviar</button>
-        </form></div>
-
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mnqwjorr" method="post">
+          <fieldset id="fs-frm-inputs">
+            <input class="input" type="text" name="name" id="full-name" placeholder="First and Last Name" required=""><br>
+            <input class="input" type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required=""><br>
+            <input class="input" type="tel" name="_replyto" id="telephone" placeholder="+51 900 900 900" required=""><br>
+            <textarea class="textarea input" rows="5" name="message" id="message" placeholder="Write message..." required="" maxlength="480" rows="3"></textarea><br>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+          </fieldset>
+          <button type="submit" class="submit">Send</button>
+        </form>
       </div>
 
 
