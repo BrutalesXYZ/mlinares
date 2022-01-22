@@ -1,5 +1,26 @@
 body{
     cursor: crosshair; 
+    overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: auto;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
 }
 
 #es_, #en_ {
@@ -43,23 +64,56 @@ span .hidden{
 }
 
 .input{
+    right: 0px;
     font-size: 1.5em;
     border-bottom: 1px solid black;
     border: #000;
+    width: 90vw;
+    min-height: 3rem;
 }
 
 .submit{
+    font-family: 'Roboto Slab';
     font-size: 1.5em;
     border-radius: 50px;
     border: 1px solid black;
-    padding: 5px 20px;
+    padding: 15px 50px;
+    margin: 20px 0px;
+    text-align: right;
+    background: #000;
+    color: #fff;
 }
 
 .submit:hover{
-    color: white;
-    background: #000;
+    color: #000;
+    background: #fff;
 }
 
+form{
+    position: relative;
+    right: 0px;
+    text-align: right;
+    width: 90vw;
+}
+
+
+textarea, input{
+   font-family: 'Roboto Slab', sans-serif;
+   font-size: inherit;
+   text-align: right;
+}
+
+textarea.input{
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input.textarea.input{
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
 
 a,
 abbr,
