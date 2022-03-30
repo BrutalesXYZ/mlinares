@@ -52,7 +52,7 @@ span .hidden{
 }
 
 .brand{
-    margin-right: 3vw;
+    margin: 10vw 10vw 0 0;
 }
 
 .brands{
@@ -156,7 +156,6 @@ samp,
 small,
 span,
 strike,
-strong,
 sub,
 sup,
 table,
@@ -376,9 +375,7 @@ h2,
 h3 {
     line-height: 1;
 }
-strong {
-    font-family: "Roboto", sans-serif;
-}
+
 a,
 button {
     cursor: pointer;
@@ -828,6 +825,7 @@ header#header nav[role="navigation"] {
     left: 3.4vw;
     will-change: transform;
     top: 25px;
+    font-weight: bolder;
 }
 @media only screen and (min-width: 789px) {
     header#header nav[role="navigation"] {
@@ -2817,7 +2815,7 @@ main[role="main"][page-type="explore"] .lists[type="colors"] ul.list-keywords {
     height: auto;
     width: 100vw;
     text-align: center;
-    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    -webkit-mask-image:-webkit-gradient(linear, left center, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
       mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
