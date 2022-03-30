@@ -1,11 +1,10 @@
 body{
-    cursor: crosshair; 
-    overflow-x: hidden;
+    
 }
 
 /* width */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: .5vw;
 }
 
 /* Track */
@@ -33,24 +32,22 @@ span .hidden{
 
 .image{
     position: relative;
-    width: 50vw;
-    margin: 10vh 5vw;
+    width: 60vw;
+    margin: 5vw;
 }
 
 .image span{
     display: block;
     position: relative;
-    margin: 5vh;
-    left: 30vw;
+    left: 0vw;
     bottom: 5vh;
-    width: 50vw;
+    width: 90vw;
     font-size: 1.5em;
     font-family: serif;
     user-select: none;
     text-decoration: none;
     color: #333;
-    text-align: right;
-    
+    text-align: center;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -216,7 +213,7 @@ html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    overflow-y: scroll;
+    
 }
 *,
 :after,
@@ -352,9 +349,7 @@ html {
     line-height: 1.625;
     letter-spacing: 0;
     font-size: 12px;
-    -ms-touch-action: none;
-    touch-action: none;
-    -webkit-overflow-scrolling: auto;
+    
 }
 @media only screen and (min-width: 641px) {
     body,
@@ -2813,3 +2808,16 @@ main[role="main"][page-type="explore"] .lists[type="colors"] ul.list-colors {
 main[role="main"][page-type="explore"] .lists[type="colors"] ul.list-keywords {
     display: none;
 }
+
+.bio-ph{
+    position: realtive;
+    display: block;
+    top: 0px;
+    right: 0px;
+    height: auto;
+    width: 100vw;
+    text-align: center;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
