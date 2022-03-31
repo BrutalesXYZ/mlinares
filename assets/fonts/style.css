@@ -2,5 +2,5 @@
     font-family: 'England';
     font-style: normal;
     font-weight: normal;
-    src: local('England'), url('England.woff') format('woff');
+    src: local('England'), url('./assets/fonts/England.woff') format('woff');
     }
