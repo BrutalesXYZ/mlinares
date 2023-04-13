@@ -1,5 +1,13 @@
+
 body{
     
+}
+
+@font-face {
+    font-family: 'England';
+    src: url('assets/fonts/England.ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* width */
@@ -2007,7 +2015,7 @@ body:not(.scroll-to-explore--show).intro-done .slider-ui.animate-in > div:nth-ch
 #slider-info > h3 {
     position: absolute;
     font-family: 'England';
-    src: url(assets/fonts/England.woff);
+    src: url(assets/fonts/England.ttf);
     font-size: 45px;
     line-height: 1;
     width: calc(100% - 80px);
