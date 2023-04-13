@@ -2835,4 +2835,9 @@ main[role="main"][page-type="explore"] .lists[type="colors"] ul.list-keywords {
         margin:0vh 0 5vh;
         padding:3px;
     }
+    .bio-page{
+        position: static;
+        width: 100vw;
+        margin: 0 auto;
+    }
 }
