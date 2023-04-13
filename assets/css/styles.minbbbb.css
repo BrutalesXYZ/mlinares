@@ -2839,5 +2839,16 @@ main[role="main"][page-type="explore"] .lists[type="colors"] ul.list-keywords {
         position: static;
         width: 100vw;
         margin: 0 auto;
+        padding:3em;
+    }
+}
+
+@media only screen and (max-width: 950px) and (min-width:641px) {
+
+    .bio-page{
+        position: static;
+        padding:3em;
+        width: 72vw;
+        margin: 0 auto;
     }
 }
