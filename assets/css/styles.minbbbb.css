@@ -30,34 +30,18 @@ span .hidden{
     display: none;
 }
 
-.image{
-    position: relative;
-    width: 60vw;
-    margin: 5vw;
-}
-
-.image span{
-    display: block;
-    position: relative;
-    left: 0vw;
-    bottom: 5vh;
-    width: 90vw;
-    font-size: 1.5em;
-    font-family: serif;
-    user-select: none;
-    text-decoration: none;
-    color: #333;
-    text-align: center;
-    font-family: 'Roboto Slab', serif;
-}
 
 .brand{
-    margin: 10vw 10vw 0 0;
+    display:block;
+    margin: 0 auto;
+    padding:3em;
+    
 }
 
 .brands{
     position: relative;
-    margin-right: 6vh;
+    margin:0 auto;
+    text-align:center;
 }
 
 .input{
@@ -2809,14 +2793,46 @@ main[role="main"][page-type="explore"] .lists[type="colors"] ul.list-keywords {
 }
 
 .bio-ph{
-    position: relative;
+    position: static;
     display: block;
     top: 0px;
-    left: 25vw;
+    left: 0vw;
+    RIGHT:0VW;
+    PADDING:5%;
     height: 100vh;
     width: auto;
+    transform:translate(50% -50%);
     text-align: right;
     -webkit-mask-image:-webkit-gradient(linear, left center, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
       mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
+
+.bio-page{
+    position: static;
+    width: 25vw;
+    margin: 0 auto;
+}
+
+.bio-page span{
+    display: block;
+    position: relative;
+    left: 0vw;
+    bottom: 5vh;
+    font-size: 1.5em;
+    font-family: serif;
+    user-select: none;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+@media only screen and (max-width: 641px) {
+    .bio-ph{
+        width:100vw;
+        height:auto;
+        margin:0vh 0 5vh;
+        padding:3px;
+    }
+}
