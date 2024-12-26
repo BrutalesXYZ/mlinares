@@ -45,7 +45,7 @@ Professional portfolio website for Micaela Linares, a distinguished makeup artis
 - PWA capabilities
 - SEO optimization for beauty industry
 
-## Image Optimization 🎨
+## Image 🎨
 
 Editorial standard image processing:
 - High-resolution support
@@ -199,5 +199,5 @@ Crafted with ❤️ and {code} by Brutales XYZ
 <br>
 © 2024 Brutales XYZ - Where Digital Art Meets Beauty as Science 🧬
 <br>
-Lead Artist: Mari Lin
+Founder: Mari Lin
 </p>
