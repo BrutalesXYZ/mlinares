@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'England';
+    src: url('../fonts/England.woff') format('woff'),
+         url('../fonts/England.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#slider-info h3 {
+    font-family: 'England', sans-serif; 
+}
